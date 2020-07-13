@@ -18,9 +18,9 @@
         method="POST"
         class="container border-right border-left border-primary text-center mt-5"
       >
-        <h1 class="text-primary">
+        <h2 class="text-primary">
           Register your Email
-        </h1>
+        </h2>
 
         <div class="form-group">
           <input
@@ -36,17 +36,17 @@
           <input
             type="submit"
             value="SEND"
-            class="btn btn-lg font-weight-bolder btn-secondary col-3 form-control"
+            class="btn btn-lg font-weight-bolder btn-secondary col-4 form-control"
           />
         </div>
       </form>
 
-      <div class="mt-5 pt-5 col-4">
+      <div class="mt-5 pt-5 col-10">
         <ul class="list-group">
           {% for emailElm in emailAll %}
           <li class="list-group-item">
             <span class="font-weight-bold"> {{emailElm.id}}- </span>
-            {{emailElm.email}}
+            <code>{{emailElm.email}}</code>
           </li>
           {% else %}
           <i class="text-danger font-weight-bold">
