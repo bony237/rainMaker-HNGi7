@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--icon-->
+    <title>Capture Email</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="{{ url_for('email_register') }}"
+        method="POST"
+        class="container border-right border-left border-primary text-center mt-5"
+      >
+        <h1 class="text-primary">
+          Register your Email
+        </h1>
+
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            id="emailField"
+            class="form-control form-control-lg mx-auto col-7 my-5"
+            placeholder="Enter your Email"
+            required
+            autofocus
+          />
+
+          <input
+            type="submit"
+            value="SEND"
+            class="btn btn-lg font-weight-bolder btn-secondary col-3 form-control"
+          />
+        </div>
+      </form>
+
+      <div class="mt-5 pt-5 col-4">
+        <ul class="list-group">
+          {% for emailElm in emailAll %}
+          <li class="list-group-item">
+            <span class="font-weight-bold"> {{emailElm.id}}- </span>
+            {{emailElm.email}}
+          </li>
+          {% else %}
+          <i class="text-danger font-weight-bold">
+            No email register yet !
+          </i>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

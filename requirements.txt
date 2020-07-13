@@ -1,7 +1,12 @@
 click
 Flask
+Flask-Session
+psycopg2-binary
+SQLAlchemy
 gunicorn
 itsdangerous
 Jinja2
 MarkupSafe
 Werkzeug
+
+
