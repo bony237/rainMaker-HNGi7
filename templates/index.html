@@ -2,18 +2,96 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <!--Bootstrap Style-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <!--Custom Style-->
+    <link rel="stylesheet" href="../static/custom_css.css">
+
     <!--icon-->
-    <title>Capture Email</title>
+    <title>RainMaker</title>
   </head>
   <body>
-    <div class="container">
-      <form
+    
+    <!--Section Header-->  
+    <div>
+
+    </div>
+    <!--end Section Header-->
+
+
+    <!--Section Home-->
+    <div id="home" class="p-5 d-flex">
+      <div class="col-6 p-5 container">
+        <h1 class="custom-color1 font-weight-bolder">Become your own weatherman with just one touch! </h1>
+        <p class="custom-color2">
+          RainMaker gives you the power to control the amount of rainfall in your preferred location,
+          right from your mobile phone.
+        </p>
+
+        <h3 class="custom-color1 font-weight-bolder">Cool Right?</h3>
+        <p class="custom-color2">Be the first to know when we launch </p>
+
+        <form action="{{ url_for('email_register') }}" method="POST"  >
+          <div class="form-group row col-10">
+            <input
+              type="email"
+              name="email"
+              id="emailField"
+              class="form-control form-control-l col-8 mr-0"
+              placeholder="Email address"
+              required
+            />
+
+            <input
+              type="submit"
+              value="SUBMIT"
+              class="btn btn-l h-100 ml-0 text-white custom-bg-green font-weight-bolder col-4 form-control"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="col-6">
+        <div id="phones-images"></div>
+      </div>
+    </div>
+    <!--end Section Home-->
+
+
+    <!--Section take-in-charge-->
+    <div></div>
+    <!--end Section take-in-charge-->
+
+    
+    <!--Section Rain-water-->
+    <div></div>
+    <!--end Section Rain-water-->
+
+
+    <!--Section Floods-->
+    <div></div>
+    <!--end Section Floods-->
+
+
+    <!--Section Ready-->
+    <div></div>
+    <!--end Section Ready-->
+
+
+    <!--Section Footer-->
+    <div></div>
+    <!--end Section Footer-->
+      
+  </body>
+</html>
+
+<!--<form
         action="{{ url_for('email_register') }}"
         method="POST"
         class="container border-right border-left border-primary text-center mt-5"
@@ -39,9 +117,9 @@
             class="btn btn-lg font-weight-bolder btn-secondary col-4 form-control"
           />
         </div>
-      </form>
+      </form> -->
 
-      <div class="mt-5 pt-5 col-10">
+<!--<div class="mt-5 pt-5 col-10 d-none">
         <ul class="list-group">
           {% for emailElm in emailAll %}
           <li class="list-group-item">
@@ -54,7 +132,6 @@
           </i>
           {% endfor %}
         </ul>
-      </div>
-    </div>
-  </body>
-</html>
+      </div>-->
+    
+
