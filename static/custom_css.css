@@ -119,6 +119,10 @@ form input:last-child {
     #home {
         font-size: 7px;
     }
+
+    #section_2 {
+        font-size: 12;
+    }
   }
   
   /* Medium devices (tablets, less than 992px) */
