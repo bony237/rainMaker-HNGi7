@@ -4,6 +4,7 @@
     font-family: 'Gilroy-Regular', sans-serif;
 }
 
+
 .custom-color-blue {
     color: #10316B;
 }
@@ -16,6 +17,7 @@
     color: #0B8457;
 }
 
+
 .custom-bg-green {
     background-color: #0B8457;
 }
@@ -24,7 +26,11 @@
     background-color: #C5F4FE;
 }
 
-
+/*Section Header*/
+#header {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+/*end Section Header*/
 
 /*Section Home*/
 #home {
@@ -32,6 +38,7 @@
     background-size: cover;
     position: relative;
     z-index: 0;
+    font-family: 'Gilroy-Bold', sans-serif;
 }
 
 #home h1 {
@@ -93,3 +100,44 @@ form input:last-child {
     border: green 2px dashed;
 }
 /*end debug border*/
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+a@media (max-width: 575.98px) {
+    html {
+      font-size: xx-small;
+    }
+  }
+  
+  /* Small devices (landscape phones, less than 768px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    html {
+      font-size: x-small;
+    }
+  }
+  
+  /* Medium devices (tablets, less than 992px) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+  /* Large devices (desktops, less than 1200px) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    html {
+      font-size: 15px;
+    }
+  
+  }
+  
+  /*Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+    html {
+      font-size: 15px;
+      max-width: 1400px;
+      margin: auto;
+    }
+  }
+  
