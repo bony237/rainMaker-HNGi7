@@ -89,6 +89,12 @@ form input:last-child {
 }
 /*end Section 6*/
 
+/*Section 4*/
+#section_4 {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+/*end Section 4*/
+
 /*debug border*/
 .border-debug1 {
     border: red 2px dashed;
