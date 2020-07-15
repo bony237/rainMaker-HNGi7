@@ -41,9 +41,6 @@
     font-family: 'Gilroy-Bold', sans-serif;
 }
 
-#home h1 {
-    line-height: 48px;
-}
 
 #home #phones-images {
     padding-top: 100%;
@@ -104,23 +101,34 @@ form input:last-child {
 
 
 /* Extra small devices (portrait phones, less than 576px) */
-a@media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
     html {
-      font-size: xx-small;
+      font-size: 10px;
+    }
+    #home {
+        font-size: 10px;
     }
   }
   
   /* Small devices (landscape phones, less than 768px) */
   @media (min-width: 576px) and (max-width: 767.98px) {
     html {
-      font-size: x-small;
+      font-size: 10px;
+    }
+
+    #home {
+        font-size: 7px;
     }
   }
   
   /* Medium devices (tablets, less than 992px) */
   @media (min-width: 768px) and (max-width: 991.98px) {
     html {
-      font-size: 12px;
+      font-size: 10px;
+    }
+
+    #home {
+        font-size: 5px;
     }
   }
   
