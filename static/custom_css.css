@@ -4,7 +4,7 @@
     font-family: 'Gilroy-Regular', sans-serif;
 }
 
-.custom-color1 {
+.custom-color-blue {
     color: #10316B;
 }
 
@@ -12,7 +12,7 @@
     background-color: #10316B;
 }
 
-.custom-color2 {
+.custom-color-green {
     color: #0B8457;
 }
 
@@ -20,13 +20,13 @@
     background-color: #0B8457;
 }
 
+.custom-bg-blue-sky {
+    background-color: #C5F4FE;
+}
+
 
 
 /*Section Home*/
-
-
-
-
 #home {
     background-color: #E4E2FF;
     background-size: cover;
@@ -43,4 +43,53 @@
     background: url("./phone2.png") no-repeat bottom right/60% , url("./phone1.png") no-repeat 19% top /53%;
     /*background-size: contain;*/
 }
-/**/
+
+form input:first-child {
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+form input:last-child {
+    border: solid 1px #0B8457;
+    border-radius: 0 5px 5px 0;
+}
+/*end Section Home*/
+
+/*Section 2*/
+#weather-icons {
+    background: url("./weather-icons.png") border-box no-repeat center/65%, rgba(242, 238, 238, 0.4) ;
+    
+}
+
+
+
+#image-tablet {
+    padding-top: 100%;
+    background: url("./image-tablet.png") no-repeat center/contain border-box;
+}
+/*end Section 2*/
+
+/*Section 3*/
+.white-place {
+    padding-top: 90%;
+}
+/*end Section 3*/
+
+/*Section 6*/
+#image-section6 {
+    
+    padding-top: 66.5%;
+    border: solid 0.001px#0B8457;
+    background: url("./image-section6.png") no-repeat border-box center/contain;
+    box-shadow: -15px -15px 0px #0B8457;
+}
+/*end Section 6*/
+
+/*debug border*/
+.border-debug1 {
+    border: red 2px dashed;
+}
+.border-debug2 {
+    border: green 2px dashed;
+}
+/*end debug border*/
