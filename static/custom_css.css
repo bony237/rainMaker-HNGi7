@@ -111,8 +111,13 @@ form input:last-child {
     html {
       font-size: 10px;
     }
+    
     #home {
         font-size: 10px;
+    }
+
+    #reday {
+        font-size: 7px;
     }
   }
   
