@@ -80,7 +80,7 @@ form input:last-child {
     
     padding-top: 66.5%;
     border: solid 0.001px#0B8457;
-    background: url("./image-section6.png") no-repeat border-box center/contain;
+    background: url("./image-section6.png") no-repeat border-box right/contain;
     box-shadow: -15px -15px 0px #0B8457;
 }
 /*end Section 6*/
