@@ -65,7 +65,9 @@ form input:last-child {
     
 }
 
-
+#section_2 p {
+    line-height: 35px;
+}
 
 #image-tablet {
     padding-top: 100%;
@@ -75,7 +77,12 @@ form input:last-child {
 
 /*Section 3*/
 .white-place {
-    padding-top: 90%;
+    padding-top: 145.5px;
+}
+
+#section_3 #image-agriculture {
+    background: url("./image-agriculture.png") no-repeat bottom/contain border-box;
+    border: solid 1px #10316B;
 }
 /*end Section 3*/
 
@@ -116,9 +123,24 @@ form input:last-child {
         font-size: 10px;
     }
 
+    #home form input:first-child {
+        font-weight: bold;
+        padding: 1.4em;
+        border-right: none;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    #home form input:last-child {
+        border: solid 1px #0B8457;
+        border-radius: 0 0 5px 5px;
+    }
+
     #reday {
         font-size: 7px;
     }
+
+    
+
   }
   
   /* Small devices (landscape phones, less than 768px) */
@@ -163,4 +185,61 @@ form input:last-child {
       margin: auto;
     }
   }
+
+  /*Swiper code*/
+  #section_4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+
+  #phone1-slider {
+    background: url("./phone1_a.png") no-repeat center/contain;
+    width: 300px;
+    height: 550px;
+  }
+
+  #phone2-slider {
+    background: url("./phone2_a.png") no-repeat center/contain;
+    width: 300px;
+    height: 550px;
+  }
+  
+  #phone3-slider {
+    background: url("./phone3.png") no-repeat center/contain;
+    width: 300px;
+    height: 550px;
+  }
+  
+  #phone4-slider {
+    background: url("./phone4.png") no-repeat center/contain;
+    width: 300px;
+    height: 550px;
+  }
+  
+  #phone5-slider {
+    background: url("./phone5.png") no-repeat center/contain;
+    width: 300px;
+    height: 550px;
+  }
+  
+  #phone6-slider {
+    background: url("./phone6.png") no-repeat center/contain;
+    width: 300px;
+    height: 550px;
+  }
+  
+  #phone7-slider {
+    background: url("./phone7.png") no-repeat center/contain;
+    width: 300px;
+    height: 550px;
+  }
+  /*end Swiper code*/
   
