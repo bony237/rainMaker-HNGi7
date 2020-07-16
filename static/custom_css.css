@@ -30,14 +30,11 @@
 #header {
     font-family: 'Gilroy-Bold', sans-serif;
 }
+
 /*end Section Header*/
 
 /*Section Home*/
 #home {
-    background-color: #E4E2FF;
-    background-size: cover;
-    position: relative;
-    z-index: 0;
     font-family: 'Gilroy-Bold', sans-serif;
 }
 
@@ -61,16 +58,12 @@ form input:last-child {
 
 /*Section 2*/
 #weather-icons {
-    background: url("./weather-icons.png") border-box no-repeat center/65%, rgba(242, 238, 238, 0.4) ;
+    background: url("./weather-icons.png") border-box no-repeat center/65%, rgba(242, 238, 238, 0.15);
     
 }
 
-#section_2 p {
-    line-height: 35px;
-}
-
-#image-tablet {
-    padding-top: 100%;
+.image-tablet {
+    padding-top: 73%;
     background: url("./image-tablet.png") no-repeat center/contain border-box;
 }
 /*end Section 2*/
@@ -113,133 +106,146 @@ form input:last-child {
 
 
 
+/*Swiper code*/
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+#phone1-slider {
+  background: url("./phone1_a.png") no-repeat center/contain;
+  width: 230px;
+  height: 400px;
+}
+
+#phone2-slider {
+  background: url("./phone2_a.png") no-repeat center/contain;
+  width: 230px;
+  height: 400px;
+}
+
+#phone3-slider {
+  background: url("./phone3.png") no-repeat center/contain;
+  width: 230px;
+  height: 400px;
+}
+
+#phone4-slider {
+  background: url("./phone4.png") no-repeat center/contain;
+  width: 230px;
+  height: 400px;
+}
+
+#phone5-slider {
+  background: url("./phone5.png") no-repeat center/contain;
+  width: 230px;
+  height: 400px;
+}
+
+#phone6-slider {
+  background: url("./phone6.png") no-repeat center/contain;
+  width: 230px;
+  height: 400px;
+}
+
+#phone7-slider {
+  background: url("./phone7.png") no-repeat center/contain;
+  width: 230px;
+  height: 400px;
+}
+/*end Swiper code*/
+
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    html {
+  html {
+    font-size: 10px;
+  }
+  
+  #home {
       font-size: 10px;
-    }
-    
-    #home {
-        font-size: 10px;
-    }
+  }
 
-    #home form input:first-child {
-        font-weight: bold;
-        padding: 1.4em;
-        border-right: none;
-        border-radius: 5px 5px 0 0;
-    }
-    
-    #home form input:last-child {
-        border: solid 1px #0B8457;
-        border-radius: 0 0 5px 5px;
-    }
-
-    #reday {
-        font-size: 7px;
-    }
-
-    
-
+  #home form input:first-child {
+      font-weight: bold;
+      padding: 1.4em;
+      border-right: none;
+      border-radius: 5px 5px 0 0;
   }
   
-  /* Small devices (landscape phones, less than 768px) */
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    html {
-      font-size: 10px;
-    }
-
-    #home {
-        font-size: 7px;
-    }
-
-    #section_2 {
-        font-size: 12;
-    }
-  }
-  
-  /* Medium devices (tablets, less than 992px) */
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    html {
-      font-size: 10px;
-    }
-
-    #home {
-        font-size: 5px;
-    }
-  }
-  
-  /* Large devices (desktops, less than 1200px) */
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    html {
-      font-size: 15px;
-    }
-  
-  }
-  
-  /*Extra large devices (large desktops, 1200px and up)*/
-  @media (min-width: 1200px) {
-    html {
-      font-size: 15px;
-      max-width: 1400px;
-      margin: auto;
-    }
+  #home form input:last-child {
+      border: solid 1px #0B8457;
+      border-radius: 0 0 5px 5px;
   }
 
-  /*Swiper code*/
-  #section_4 {
-    margin: 0;
-    padding: 0;
+  #ready form input:first-child {
+    padding: 1.5em;
   }
 
-  .swiper-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  #ready form input:last-child {
+    padding-top: 0.8em;
+    padding-bottom: 2.2em;
   }
 
 
+  
 
-  #phone1-slider {
-    background: url("./phone1_a.png") no-repeat center/contain;
-    width: 300px;
-    height: 550px;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    font-size: 10px;
   }
 
-  #phone2-slider {
-    background: url("./phone2_a.png") no-repeat center/contain;
-    width: 300px;
-    height: 550px;
+  #home {
+      font-size: 7px;
   }
-  
-  #phone3-slider {
-    background: url("./phone3.png") no-repeat center/contain;
-    width: 300px;
-    height: 550px;
+
+  #section_2 {
+      font-size: 12;
   }
-  
-  #phone4-slider {
-    background: url("./phone4.png") no-repeat center/contain;
-    width: 300px;
-    height: 550px;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 10px;
   }
-  
-  #phone5-slider {
-    background: url("./phone5.png") no-repeat center/contain;
-    width: 300px;
-    height: 550px;
+
+  #home {
+      font-size: 5px;
   }
-  
-  #phone6-slider {
-    background: url("./phone6.png") no-repeat center/contain;
-    width: 300px;
-    height: 550px;
+
+  #section_2 p {
+    line-height: 28px;
   }
-  
-  #phone7-slider {
-    background: url("./phone7.png") no-repeat center/contain;
-    width: 300px;
-    height: 550px;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  html {
+    font-size: 15px;
   }
-  /*end Swiper code*/
-  
+
+  #section_2 p {
+    line-height: 35px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  html {
+    font-size: 15px;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  #section_2 p {
+    line-height: 35px;
+  }
+}

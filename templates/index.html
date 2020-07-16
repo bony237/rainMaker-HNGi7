@@ -41,10 +41,10 @@
   <body>
     
     <!--Section Header-->  
-    <div class="mx-4 px-4 mx-lg-5 px-lg-5 py-4">
+    <div class="mx-4 px-4 mx-lg-5 px-lg-5 py-2" id="header">
       <div class="d-flex justify-content-between">
         <div class="col-4 pl-0 col-lg-auto"><img src="../static/Logo.png" alt="logo" class=""></div>
-        <button class="d-none d-sm-block btn px-4 custom-bg-green text-white">GET EARLY ACCESS</button>
+        <div class="d-none d-sm-flex align-items-center"><button class="px-4 custom-bg-green btn text-white py-2">GET EARLY ACCESS</button></div>
         
       </div>
       <button class="d-sm-none btn btn-sm small font-weight-bold text-right ml-2 py-0 custom-bg-green text-white">GET EARLY ACCESS</button>
@@ -54,7 +54,7 @@
 
 
     <!--Section Home-->
-    <div id="home" class="px-4 px-lg-5">
+    <div id="home" class="px-4 px-lg-5 custom-bg-blue-sky">
       <div class="d-sm-none pt-5 pl-4">
         <h1 class="custom-color-blue font-weight-bolder">Become your own <br> weatherman with just <br> one touch! </h1>
         <p class="custom-color-green my-4 h4">
@@ -114,30 +114,25 @@
 
       <div class="px-3 mx-sm-4 mx-3 px-sm-4 py-3 mx-lg-5 p-lg-5">
         <div class="d-flex flex-column flex-sm-row align-items-center">
-          <div class="col-6 mx-auto order-1 col-sm-4 col-md-6 py-0">
-            <div id="image-tablet"></div>
+          <div class="d-none d-sm-block col-3 col-sm-4 col-md-6 ml-0 pl-sm-0 py-2 ">
+            <div class="image-tablet"></div>
           </div>
   
-          <div class="col-sm-7 order-first order-sm-last col-md-6 ml-md-4">
-            <h3 class="custom-color-green mb-5 font-weight-bold mt-4 mt-md-0">RainMaker Technology</h3>
-            <p class="custom-color-blue h4">
+          <div class="col-sm-8 col-md-6 ml-0 pl-2 ml-lg-4">
+            <div class="d-flex justify-content-between align-items-center pt-4 pt-md-0">
+              <h3 class="custom-color-green font-weight-bold ">RainMaker Technology</h3>
+              <div class="d-sm-none col-3 mr-4">
+                <div class="image-tablet"></div>
+              </div>
+            </div>
+            <p class="custom-color-blue h5">
               Welcome to a world of possibilities. <br> With our state of the art wind turbine and condensation technology,
-              we have mastered the art of directional wind change and atmospheric water generation. 
-              <span class="d-none d-md-inline">
-                Such directional
-                wind change can influence cloud movement and reduce/stop rainfall while our condensation technology is
-                applied to lower air temperature to it’s dew point, causing water to condense and the result is rainfall.
-              </span>
+              we have mastered the art of directional wind change and atmospheric water generation. Such directional
+              wind change can influence cloud movement and reduce/stop rainfall while our condensation technology is
+              applied to lower air temperature to it’s dew point, causing water to condense and the result is rainfall.
+              
             </p>
           </div>
-        </div>
-
-        <div class="custom-color-blue h4 d-block d-md-none ml-4 mb-5">
-          <p>
-            Such directional
-            wind change can influence cloud movement and reduce/stop rainfall while our condensation technology is
-            applied to lower air temperature to it’s dew point, causing water to condense and the result is rainfall.
-          </p>
         </div>
       </div>
     </div>
@@ -178,7 +173,7 @@
 
 
     <!--Section 4-->
-    <div id="section_4" class="custom-bg-green py-5">
+    <div id="section_4" class="custom-bg-green py-5 px-0">
       
       <h2 class="text-white text-center my-5 font-weight-bolder">Feel the RainMaker Experience!</h2>
         
@@ -216,18 +211,18 @@
         
         <h2 class="d-sm-none custom-color-blue font-weight-bold my-3">Ready to become a RainMaker?</h2> 
 
-        <div class="d-flex align-items-center py-5">
-          <div class="col-5 col-sm-6 py-5">
-            <div id="image-section6"></div>
+        <div class="d-flex flex-column flex-sm-row align-items-center py-5">
+          <div class="col col-sm-6 py-0 py-sm-5">
+            <div id="image-section6" class="rounded"></div>
           </div>
   
-          <div class="col-7 col-sm-6 ml-sm-4 px-0 px-sm-5 mx-0 mx-sm-5">
+          <div class="pt-3 pt-sm-0 col-sm-6 ml-sm-4 px-0 px-md-5 mx-0 mx-md-5">
             <h2 class="d-none d-sm-block custom-color-blue font-weight-bold">Ready to become a <br> RainMaker?</h2>
             <p class="custom-color-green h5 font-weight-bold my-4">
               We'll notify you once the app is ready.
             </p>
-            <form action="{{ url_for('email_register') }}" method="POST" class="w-100 mr-0 d-block col shadow" >
-              <div class="form-group row pb-0">
+            <form action="{{ url_for('email_register') }}" method="POST" class="col-9 col-sm-8 col-md-7 col-lg-9 mr-0 d-block col shadow" >
+              <div class="row">
                 <input
                   type="email"
                   name="email"
