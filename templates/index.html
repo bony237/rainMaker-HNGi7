@@ -76,7 +76,7 @@
           <h3 class="custom-color-blue font-weight-bolder pt-sm-0 mt-sm-0">Cool Right?</h3>
           <p class="custom-color-green my-3 h4">Be the first to know when we launch </p>
   
-          <div class="col-md-9 col-lg-11 my-4 pl-0">
+          <div class="col-md-8 col-lg-9 my-4 pl-0">
             <form action="{{ url_for('email_register') }}" method="POST" class="shadow form-group d-flex flex-wrap" >
             
               <input
@@ -91,7 +91,7 @@
               <input
                 type="submit"
                 value="SUBMIT"
-                class="btn text-white custom-bg-green font-weight-bolder col-auto col-sm-4 form-control"
+                class="btn btn-outline-success text-white custom-bg-green font-weight-bolder col-auto col-sm-4 form-control"
               />
             </form>
           </div>
@@ -144,7 +144,7 @@
       <h2 class="custom-color-blue font-weight-bold text-center my-5">Use cases</h2>
       <div class="d-flex col-12 col-sm-11 flex-column align-items-center flex-sm-row my-5 mx-3 mx-sm-4 mx-lg-5">
         <div class="col-11 col-sm-4 bg-white rounded-lg px-0">
-          <div class="w-100"><div class="white-place w-100"></div></div>
+          <div class="w-100"><div class="white-place w-100" id="image-water"></div></div>
           <div class="pt-3">
             <h3 class="font-weight-bold custom-color-green">Rain-water Harvesting</h3>
             <p class="h6 pb-4 px-2 pt-2 custom-color-blue">Embrace the power to increase rainfall, and solve your water needs.</p>
@@ -160,7 +160,7 @@
         </div>
 
         <div class="col-11 col-sm-4 bg-white rounded-lg px-0">
-          <div class="col-12"><div class="white-place w-100"></div></div>
+          <div class="w-100"><div class="white-place w-100" id="image-floods"></div></div>
           <div class="pt-3">
             <h3 class="font-weight-bold custom-color-green">Floods & Erosion</h3>
             <p class="h6 pb-4 px-2 pt-2 custom-color-blue">Now one of nature’s most destrcutive acts can be tamed!</p>
@@ -173,13 +173,13 @@
 
 
     <!--Section 4-->
-    <div id="section_4" class="custom-bg-green py-5 px-0">
+    <div id="section_4" class="custom-bg-green py-4 px-0">
       
-      <h2 class="text-white text-center my-5 font-weight-bolder">Feel the RainMaker Experience!</h2>
+      <h2 class="text-white text-center my-4 font-weight-bolder">Feel the RainMaker Experience!</h2>
         
       <div class="swiper-container py-4">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper mb-5">
+        <div class="swiper-wrapper mb-4">
             <!-- Slides -->
             <div class="swiper-slide" id="phone1-slider"></div>
             <div class="swiper-slide" id="phone2-slider"></div>
@@ -188,14 +188,15 @@
             <div class="swiper-slide" id="phone5-slider"></div>
             <div class="swiper-slide" id="phone6-slider"></div>
             <div class="swiper-slide" id="phone7-slider"></div>
+            <div class="swiper-slide" id="phone8-slider"></div>
             ...
         </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination-white"></div>
     
-        <!-- If we need navigation buttons 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev custom-swiper-button"><span class="text-dark fa fa-chevron-left ml-3"></span></div>
+        <div class="swiper-button-next custom-swiper-button"><span class="text-dark fa fa-chevron-right ml-5 ml-md-4"></span></div>
     
         
       </div>
@@ -213,7 +214,14 @@
 
         <div class="d-flex flex-column flex-sm-row align-items-center py-5">
           <div class="col col-sm-6 py-0 py-sm-5">
-            <div id="image-section6" class="rounded"></div>
+            <div class="swiper-container w-100">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="image1-section6"></div>
+                <div class="swiper-slide" id="image2-section6"></div>
+                <div class="swiper-slide" id="image3-section6"></div>
+              </div>
+            </div>
+            
           </div>
   
           <div class="pt-3 pt-sm-0 col-sm-6 ml-sm-4 px-0 px-md-5 mx-0 mx-md-5">
@@ -235,7 +243,7 @@
                 <input
                   type="submit"
                   value="SUBMIT"
-                  class="btn text-white custom-bg-green font-weight-bolder col-4 form-control"
+                  class="btn btn-outline-success text-white custom-bg-green font-weight-bolder col-4 form-control"
                 />
               </div>
             </form>
@@ -262,9 +270,9 @@
               www.rainmakerapp.com <br> support@rainmakerapp.com
             </p>
             <div class="d-flex col-12 pl-0">
-              <div class="bg-white py-1 col-2 rounded-lg h5 custom-color-green pl-2 pr-0"><i class="fa fa-facebook-f"></i></div>
-              <div class="bg-white py-1 col-2 rounded-lg h5 custom-color-green pl-2 pr-0 mx-3"><i class="fa fa-instagram mr-5"></i></div>
-              <div class="bg-white py-1 col-2 rounded-lg h5 custom-color-green pl-2 pr-0"><i class="fa fa-twitter"></i></div>
+              <div class="btn bg-white py-0 col-2 rounded-lg h1 custom-color-green pl-0 pr-0"><i class="fa fa-facebook-f"></i></div>
+              <div class="btn bg-white py-0 col-2 rounded-lg h1 custom-color-green pl-2 pr-0 mx-3"><i class="fa fa-instagram mr-5"></i></div>
+              <div class="btn bg-white py-0 col-2 rounded-lg h1 custom-color-green pl-0 pr-0"><i class="fa fa-twitter"></i></div>
             </div>
           </div>
         </div>
@@ -276,7 +284,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-      var swiper = new Swiper('.swiper-container', {
+      var swiper_section4 = new Swiper('#section_4 .swiper-container', {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
@@ -289,10 +297,27 @@
           slideShadows: false,
         },
         pagination: {
-          el: '.swiper-pagination',
+          el: '#section_4 .swiper-pagination',
           clickable: true,
         },
+
+        navigation: {
+        nextEl: '#section_4 .swiper-button-next',
+        prevEl: '#section_4 .swiper-button-prev',
+      },
       });
+
+
+      var swiper_ready = new Swiper('#ready .swiper-container', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
     </script>
   </body>
 </html>
