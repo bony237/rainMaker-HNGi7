@@ -12,22 +12,26 @@ db = scoped_session(sessionmaker(bind=engine))
 app = Flask(__name__)
 
 
-@app.route("/", methods=["POST", "GET"])
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+@app.route("/email_register", methods=["POST"])
 def email_register():
-    if (request.method == "POST"):
-        emailRegister = request.form.get('email')
+    emailRegister = request.form.get('email')
 
-        redundant = db.execute("SELECT * FROM emails WHERE email=:emailRegister",
-                               {"emailRegister": emailRegister})
+    redundant = db.execute("SELECT * FROM emails WHERE email=:emailRegister",
+                           {"emailRegister": emailRegister})
 
-        if(redundant.rowcount == 0):
-            db.execute("INSERT INTO emails (email) VALUES (:email)",
-                       {"email": emailRegister})
-            db.commit()
+    if(redundant.rowcount == 0):
+        db.execute("INSERT INTO emails (email) VALUES (:email)",
+                   {"email": emailRegister})
+        db.commit()
+        return 'new_email'
 
-    emailAll = db.execute("SELECT * FROM emails").fetchall()
-    return render_template("index.html", emailAll=emailAll)
+    return 'not_new_email'
 
 
 if __name__ == "__main__":
-    email_register()
+    index()
