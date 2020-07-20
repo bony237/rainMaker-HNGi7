@@ -80,3 +80,31 @@ var swiper_ready = new Swiper("#ready .swiper-container", {
     disableOnInteraction: false,
   },
 });
+
+/*
+  Anime js code
+ */
+
+var lastWindowScroll = 0;
+const headerElm = document.querySelector('#header');
+const heightHeader = headerElm.offsetHeight;
+
+ window.onscroll = function () {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if(scrollTop > lastWindowScroll) {
+    
+    headerElm.style.top=`-${heightHeader}px`;
+   }
+   else {
+      headerElm.style.top='0px';
+      if (scrollTop < 40 ) {
+        headerElm.style.backgroundColor = 'white';
+      }
+      else {
+        headerElm.style.backgroundColor = 'rgba(252, 252, 252)';
+      }
+      
+   }
+   lastWindowScroll = scrollTop;
+ }
